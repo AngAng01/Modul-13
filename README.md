@@ -1,15 +1,16 @@
 # MODUL TIGA BELAS
   ## SOAL 1
-  Program di atas adalah program untuk mengurutkan nomor rumah di setiap daerah dalam urutan membesar (ascending). 
+  Program di atas adalah sebuah implementasi untuk mengurutkan data menggunakan algoritma insertion sort dan memeriksa apakah data memiliki jarak yang tetap antar elemen setelah diurutkan.
    
    ## Overview
       Program ini terdiri dari satu file bernama 'main.go' dan mencakup komponen-komponen utama berikut:
       - Pernyataan 'package main', yang mendefinisikan paket untuk program yang dapat dieksekusi.
-      - Pernyataan 'import', yang digunakan untuk menyertakan paket-paket yang diperlukan (dalam hal ini, 'fmt' dan 'math').
+      - Pernyataan 'import', yang digunakan untuk menyertakan paket-paket yang diperlukan.
       - Fungsi 'main()', yang merupakan titik awal dari setiap program Go.
-      - Konstanta maxSize, Konstanta ini mendefinisikan ukuran maksimum array (datInt), yang bernilai 100. Konstanta ini digunakan sebagai batas untuk jumlah rumah di setiap daerah.
-      - Tipe Data datInt, Sebuah tipe data berupa array dengan ukuran tetap ([maxSize]int) yang digunakan untuk menyimpan daftar nomor rumah di setiap daerah.
-      - Fungsi pengurutanMembesar, Fungsi ini mengimplementasikan algoritma selection sort untuk mengurutkan elemen-elemen array dalam urutan membesar (ascending order). Fungsi menerima referensi ke array A (dari tipe datInt) dan jumlah elemen N yang akan diurutkan.
+      - Program menggunakan konstanta 'MAX' dengan nilai 100 untuk menentukan ukuran maksimum array.
+      - Tipe data 'arrayInt' adalah alias untuk array dengan ukuran tetap MAX, yang berfungsi menyimpan bilangan bulat yang diinputkan oleh pengguna.
+      - Fungsi 'insertionSort', Fungsi ini digunakan untuk mengurutkan array secara menaik dengan algoritma insertion sort.
+      - Fungsi 'checkDataOrder', Fungsi ini mengevaluasi apakah elemen-elemen dalam array memiliki jarak tetap setelah pengurutan.
       
    ## Code Explanation
    ```go
